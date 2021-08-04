@@ -15,38 +15,49 @@
             }
             .wrapper{
                 background: linear-gradient(150.96deg, #424242 1.71%, rgba(0, 0, 0, 0.81) 98.13%);
-                height: 100vh;
                 display: block;
                 position: relative;
                 padding-top: 45px;
-                padding-bottom: 130px;
+                padding-bottom: 140px;
+                max-width: 100%;
+                width: 640px;
             }
             .wrapper-main{
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
                 background-image: url('img/logo.png');
-            }
-            h1{
-                font-size: 40px;
-                line-height: 46px;
-                color: #FFF8F8;
-                font-family: 'Alice', serif;
                 position: relative;
-                text-align: right;
-                font-weight: 400;
-                display: inline-block;
-                padding-left: 15px;
-                padding-bottom: 10px;
+                height: 700px;
             }
-            h1:after{
-                content: '&';
+            .title{
+                display: inline-block;
+                position: absolute;
+                top: 40%;
+                left: 45%;
+                transform: translate(-100%, -100%);
+            }
+            h6{
+                font-family: 'Alice', serif;
+                font-weight: 400;
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 color: #A9A9A9;
                 font-size: 50px;
                 line-height: 57px;
+                margin: 0;
+            }
+            h1{
+                font-size: 40px;
+                line-height: 46px;
+                color: #FFF8F8;
+                font-family: 'Alice', serif;
+                text-align: right;
+                font-weight: 400;
+                margin: 0;
+                padding-left: 15px;
+                padding-bottom: 10px;
             }
             h3{
                 font-weight: 400;
@@ -66,8 +77,7 @@
                 margin-bottom: 10px;
                 position: relative;
             }
-            h4:after{
-                content: '';
+            h4 .line{
                 width: 35px;
                 height: 3px;
                 background: #DAB76A;
@@ -107,6 +117,9 @@
             .sidebar{
                 margin-right: 15px;
                 text-align: right;
+                position: absolute;
+                bottom: -80px;
+                right: 0;
             }
             .footer{
                 text-align: center;
@@ -114,6 +127,7 @@
                 left: 50%;
                 transform: translate(-50%,0);
                 position: absolute;
+                width: 100%;
             }
         </style>
     </head>
@@ -121,10 +135,15 @@
     <body>
         <div class="wrapper">
             <div class="wrapper-main">
-                <h1>
-                    Ana Luisa <br>
-                    Viviana
-                </h1>
+                <div class="title">
+                    <h1>
+                        Ana Luisa <br>
+                        Viviana
+                    </h1>
+                    <h6>
+                        &
+                    </h6>
+                </div>
                 <div class="sidebar">
                     <h3>
                         Te invitamos a acompañarnos <br>
@@ -132,12 +151,14 @@
                         Viernes 10 de septiembre,13:00 HRS <br>
                     </h3>
                     <h4>
+                        <div class="line"></div>
                         <strong>LUGAR:</strong> <br>
                         Hotel Mandarín Oriental <br>
                         Av. Presidente Kennedy  #4601 <br>
                         Las Condes.
                     </h4>
                     <h4>
+                        <div class="line"></div>
                         <strong>DRESS CODE: </strong> <br>
                         cocktail elegante 
                     </h4>
