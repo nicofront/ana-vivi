@@ -17,36 +17,20 @@
                 background: linear-gradient(150.96deg, #424242 1.71%, rgba(0, 0, 0, 0.81) 98.13%);
                 display: block;
                 position: relative;
-                padding-top: 45px;
-                padding-bottom: 140px;
+                padding: 0px 10px;
                 max-width: 100%;
-                width: 640px;
+                width: 640px;   
             }
             .wrapper-main{
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
                 background-image: url('https://nicofront.github.io/annie/img/logo.png');
-                position: relative;
-                height: 700px;
+                margin-bottom: 40px;
             }
             .title{
                 display: inline-block;
-                position: absolute;
-                top: 40%;
-                left: 45%;
-                transform: translate(-100%, -100%);
-            }
-            h6{
-                font-family: 'Alice', serif;
-                font-weight: 400;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                color: #A9A9A9;
-                font-size: 50px;
-                line-height: 57px;
-                margin: 0;
+                margin-right: 20px;
             }
             h1{
                 font-size: 40px;
@@ -58,6 +42,10 @@
                 margin: 0;
                 padding-left: 15px;
                 padding-bottom: 10px;
+            }
+            h1 span{
+                color: #A9A9A9;
+                font-family: 'Alice', serif;
             }
             h3{
                 font-weight: 400;
@@ -77,24 +65,20 @@
                 margin-bottom: 10px;
                 position: relative;
             }
-            h4 .line{
+            .line{
                 width: 35px;
                 height: 3px;
                 background: #DAB76A;
                 display: inline-block;
-                position: absolute;
-                top: 0;
-                right: 0;
             }
             h4 strong{
                 font-weight: 700;
             }
             h5{
-                text-align: center;
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 12px;
-                color: #CACACA;
+                color: #CACACA !important;
                 background: #434343;
                 display: inline-block;
                 margin: 0 auto;
@@ -103,11 +87,21 @@
             h5 span{
                 font-weight: 600;
             }
+            table{
+                width: 100%;
+            }
+            td{
+                padding: 30px 10px 0;
+                width: 50%;
+                height: 400px;
+                text-align: right;
+                vertical-align: middle;
+            }
             .qr{
                 display: inline-block;
                 padding: 11px;
                 background: #393939;
-                margin-top: 30px;
+                margin-top: 10px;
             }
             .qr img{
                 width: 100px;
@@ -115,18 +109,10 @@
                 background: #fff;
             }
             .sidebar{
-                margin-right: 15px;
                 text-align: right;
-                position: absolute;
-                bottom: -80px;
-                right: 0;
             }
             .footer{
                 text-align: center;
-                bottom: 0;
-                left: 50%;
-                transform: translate(-50%,0);
-                position: absolute;
                 width: 100%;
             }
         </style>
@@ -135,37 +121,55 @@
     <body>
         <div class="wrapper">
             <div class="wrapper-main">
-                <div class="title">
-                    <h1>
-                        Ana Luisa <br>
-                        Viviana
-                    </h1>
-                    <h6>
-                        &
-                    </h6>
-                </div>
-                <div class="sidebar">
-                    <h3>
-                        Te invitamos a acompañarnos <br>
-                        el día de nuestra boda <br>
-                        Viernes 10 de septiembre,13:00 HRS <br>
-                    </h3>
-                    <h4>
-                        <div class="line"></div>
-                        <strong>LUGAR:</strong> <br>
-                        Hotel Mandarín Oriental <br>
-                        Av. Presidente Kennedy  #4601 <br>
-                        Las Condes.
-                    </h4>
-                    <h4>
-                        <div class="line"></div>
-                        <strong>DRESS CODE: </strong> <br>
-                        cocktail elegante 
-                    </h4>
-                    <div class="qr">
-                        <img src="https://nicofront.github.io/annie/img/qr.png" alt="QR">
-                    </div>
-                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="title">
+                                <h1>
+                                    Ana Luisa <br>
+                                    <span>&</span> Viviana
+                                </h1>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="sidebar">
+                                <h3>
+                                    Te invitamos a acompañarnos <br>
+                                    el día de nuestra boda <br>
+                                    Viernes 10 de septiembre,13:00 HRS <br>
+                                </h3>
+                                <div>
+                                    <div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <h4>
+                                        <strong>LUGAR:</strong> <br>
+                                        Hotel Mandarín Oriental <br>
+                                        Av. Presidente Kennedy  #4601 <br>
+                                        Las Condes.
+                                    </h4>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <h4>
+                                        <strong>DRESS CODE: </strong> <br>
+                                        cocktail elegante 
+                                    </h4>
+                                </div>
+                                <div class="qr">
+                                    <img src="https://nicofront.github.io/annie/img/qr.png" alt="QR">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
             </div>
             <div class="footer">
                 <h5>
